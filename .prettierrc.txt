@@ -1,0 +1,7 @@
+{
+"semi": false, // false = sans point-virgule (standard TS moderne)
+"singleQuote": true, // true = apostrophes (convention JS/TS)
+"tabWidth": 2, // 2 espaces (standard JavaScript)
+"trailingComma": "es5", // virgule en fin de dernière propriété
+"printWidth": 80 // 80 colonnes = standard
+}
