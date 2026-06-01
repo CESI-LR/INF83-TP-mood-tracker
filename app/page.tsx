@@ -1,5 +1,4 @@
 import Image from "next/image";
-const variableInutile = "je suis une erreur de lint";
 
 export default function Home() {
   return (
