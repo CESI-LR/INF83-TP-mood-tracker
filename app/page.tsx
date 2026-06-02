@@ -25,7 +25,7 @@ export default function Home() {
               Les pronostiques doivent être soumis avant le début du match
             </li>
           </ul>
-          <p>
+          <p style={{ color: "red" }}>
             Attention, un seul pronostique par match est autorisé. Bonne chance
             à tous !
           </p>
