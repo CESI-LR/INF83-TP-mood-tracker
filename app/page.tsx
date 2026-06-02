@@ -16,6 +16,7 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Coupe du monde 2026 : vos pronostiques - Étoile du marin
           </h1>
+          <p>Faites vos pronostiques sur les matchs de coupe du monde 2026</p>
         </div>
       </main>
     </div>
