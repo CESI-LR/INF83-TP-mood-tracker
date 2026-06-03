@@ -17,6 +17,18 @@ export default function Home() {
             Coupe du monde 2026 : vos pronostiques - Étoile du marin
           </h1>
           <p>Faites vos pronostiques sur les matchs de coupe du monde 2026</p>
+          <h2>Règles du jeu :</h2>
+          <ul className="list-disc list-inside text-left">
+            <li>Choisissez les équipes qui vont se rencontrer</li>
+            <li>Prévoyez le score exact du match</li>
+            <li>
+              Les pronostiques doivent être soumis avant le début du match
+            </li>
+          </ul>
+          <p style={{ color: "red" }}>
+            Attention, un seul pronostique par match est autorisé. Bonne chance
+            à tous !
+          </p>
         </div>
       </main>
     </div>
