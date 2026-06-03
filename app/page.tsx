@@ -14,8 +14,21 @@ export default function Home() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Coupe du monde 2026
+            Coupe du monde 2026 : vos pronostiques - Étoile du marin
           </h1>
+          <p>Faites vos pronostiques sur les matchs de coupe du monde 2026</p>
+          <h2>Règles du jeu :</h2>
+          <ul className="list-disc list-inside text-left">
+            <li>Choisissez les équipes qui vont se rencontrer</li>
+            <li>Prévoyez le score exact du match</li>
+            <li>
+              Les pronostiques doivent être soumis avant le début du match
+            </li>
+          </ul>
+          <p style={{ color: "red" }}>
+            Attention, un seul pronostique par match est autorisé. Bonne chance
+            à tous !
+          </p>
         </div>
       </main>
     </div>

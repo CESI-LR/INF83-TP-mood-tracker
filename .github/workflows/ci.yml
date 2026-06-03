@@ -49,3 +49,22 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build # Compile le projet pour la production
+
+  # 4. Fusion automatique de la Pull Request (s'exécute uniquement si 'build' réussit)
+  auto-merge:
+    name: Auto-Merge vers branch de destination
+    runs-on: ubuntu-latest
+    # Ce job attend obligatoirement que la compilation (build) se termine avec succès
+    needs: build
+    # On exécute ce job UNIQUEMENT s'il s'agit d'une Pull Request visant la branche develop
+    if: github.event_name == 'pull_request' && github.base_ref == 'develop'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Utilisation des outils de ligne de commande GitHub pour fusionner la PR courante
+      - name: Automatically merge the Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Donne l'autorisation d'agir sur le dépôt
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --merge --auto --delete-branch
