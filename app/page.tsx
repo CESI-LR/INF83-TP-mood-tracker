@@ -9,7 +9,12 @@ export default function Home() {
             Coupe du monde de football 2026
           </h1>
           <h2>Faites vos pronostiques maintenant !</h2>
-          <img src="/coupe-du-monde-2026.jpg" alt="logo" />
+          <Image
+            src="/coupe-du-monde-2026.jpg"
+            alt="logo"
+            width={100}
+            height={134}
+          />
           <p>Faites vos pronostiques sur les matchs de coupe du monde 2026</p>
           <h3>Règles du jeu :</h3>
           <ul className="list-disc list-inside text-left">
